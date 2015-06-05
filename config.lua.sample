@@ -1,0 +1,16 @@
+BROKER="192.168.10.3"
+BRPORT=1883
+BRUSER="mqttuser"
+BRPWD="mqttpass"
+CLIENTID="ESP8266-"..node.chipid()
+
+LED_COLOR_TOPIC="living-room/light/ceiling/#"
+
+SSID="wireless_ssid"
+PASS="some_password"
+
+LED_PINS={red=5,green=6,blue=7}
+LED_POWER=true
+LED_COLOR={red=100,green=100,blue=100}
+
+LOG_ENABLE=true
