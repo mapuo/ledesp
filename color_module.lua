@@ -14,11 +14,8 @@ local function save_config()
         file.open(config_file,"w+")
         file.writeline("LED_POWER="..tostring(LED_POWER))
         file.write("LED_COLOR={")
-        local first = true
         for channel, percent in pairs(LED_COLOR) do
-            if first == false then file.write(",") end
-            file.write(channel.."="..percent)
-            first = false
+            file.write(channel.."="..percent..",")
         end
         file.write("} -- color\n")
         file.flush()

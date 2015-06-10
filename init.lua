@@ -1,4 +1,4 @@
-dofile("config.lua")
+dofile("config.lc")
 
 function log(msg)
     if LOG_ENABLE == true then

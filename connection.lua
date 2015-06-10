@@ -2,7 +2,7 @@ local connection = {}
 
 local function on_connect(conn)
     log("Connected to MQTT: "..BROKER..":"..BRPORT.." as "..CLIENTID)
-    m:subscribe(LED_COLOR_TOPIC, 0, function(conn) print("subscribe success") end)
+    m:subscribe(LED_COLOR_TOPIC, 0, function(conn) log("subscribe success") end)
 end
 
 local function connect_broker()
